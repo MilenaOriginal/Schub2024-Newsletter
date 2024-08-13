@@ -1,0 +1,125 @@
+/* Estilo para el fondo de la página */
+body {
+    background-color: #e0f7fa; /* Verde claro */
+    margin-top: 80px; /* Espacio para el header fijo */
+}
+/* Estilo para el header fijo */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Blanco */
+    color: #009688; /* Verde */
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+    text-align: center;
+}
+header h1, header h3 {
+    margin: 0;
+}
+header h1 {
+    color: #009688; /* Verde */
+    font-size: 2.5rem;
+}
+header h3 {
+    color: #00796b; /* Verde oscuro */
+    font-size: 1.5rem;
+}
+/* Estilo para el contenedor de los enlaces */
+.link-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff; /* Fondo blanco */
+}
+/* Estilo específico para los divs con clase col */
+.col.bg-light-green, .col.bg-white {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+.col.bg-light-green {
+    background-color: #e0f7fa; /* Verde claro */
+}
+.col.bg-white {
+    background-color: #ffffff; /* Blanco */
+}
+/* Ajuste de anchura y separación de columnas */
+.row {
+    justify-content: center;
+    gap: 15px; /* Espaciado entre columnas */
+}
+.col-md-6 {
+    flex: 0 0 calc(40% - 15px); /* Ancho de la primera columna */
+}
+.col-md-6.bg-white {
+    flex: 0 0 55%; /* Ancho de la segunda columna */
+}
+/* Estilo para inputs y botones */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button {
+    background-color: #009688; /* Verde */
+    color: #ffffff; /* Blanco */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #00796b; /* Verde oscuro */
+}
+.text-danger {
+    color: #d9534f; /* Rojo para mensajes de error */
+}
+/* Estilo para las imágenes cargadas */
+#image-container-1, #image-container-2 {
+    margin-top: 10px;
+}
+/* Estilo para los drop areas */
+#drop-area-1, #drop-area-2 {
+    border: 2px dashed #009688; /* Verde */
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#drop-area-1 label, #drop-area-2 label {
+    cursor: pointer;
+    color: #009688; /* Verde */
+    text-decoration: underline;
+}
+#remove-button-1, #remove-button-2 {
+    background-color: #d9534f; /* Rojo */
+    color: #ffffff; /* Blanco */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#remove-button-1:hover, #remove-button-2:hover {
+    background-color: #c9302c; /* Rojo oscuro */
+}
+
+section{
+    margin-top: 10%;
+}
+
+.botonSend {
+    text-align: left;
+}
