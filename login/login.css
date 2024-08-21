@@ -1,0 +1,72 @@
+body{
+    background: linear-gradient(0.25turn, #B5D99C, #626E61);
+
+}
+input[type="text"], input[type="password"]{
+    width: 90%;
+    height: 50px;
+    background-color: rgba(217, 217, 217, 1);
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+h2{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    color: rgba(124, 143, 116, 1);
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+input[type="submit"]{
+    width: 120px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color:rgba(98, 110, 97, 1) ;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+    
+}
+input[type="submit"]:hover{
+    background-color:rgb(255, 255, 255) ;
+    color: rgba(98, 110, 97, 1);
+    border: 2px solid rgba(98, 110, 97, 1);
+}
+#nombre{
+    margin-top: 0px;
+}
+.contLog{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    width: 400px;
+    height: 420px;
+    align-items: center;
+    box-shadow: 5px 7px rgba(0, 0, 0, 0.068);
+    justify-content: center;
+}
+form{
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.contSub{
+    width: 93%;
+   
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 870px;
+}
