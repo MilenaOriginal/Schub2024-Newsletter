@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA en la Web</title>
+    <!-- Enlaza las bibliotecas necesarias -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ml5@0.8.5/dist/ml5.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>IA en la Web</h1>
+
+    <!-- Sección de Resumen -->
+    <section>
+        <h2>Resumen</h2>
+        <textarea id="summaryInput" placeholder="Introduce el texto para resumir..."></textarea>
+        <button onclick="summarizeText()">Obtener Resumen</button>
+        <div id="summaryOutput"></div>
+    </section>
+
+    <!-- Sección de Generación de Imágenes -->
+    <section>
+        <h2>Generar Imagen</h2>
+        <textarea id="imageDescription" placeholder="Introduce la descripción de la imagen..."></textarea>
+        <button onclick="generateImage()">Generar Imagen</button>
+        <img id="generatedImage" alt="Imagen generada aparecerá aquí" />
+    </section>
+</body>
+</html>
