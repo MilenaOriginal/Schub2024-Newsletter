@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Enlaces</title>
+    <link rel="stylesheet" href="articulosStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ingreso de Enlaces</h1>
+        <form id="linkForm">
+            <label for="link1">Enlace 1:</label>
+            <input type="text" id="link1" name="link1">
+            <label for="link2">Enlace 2:</label>
+            <input type="text" id="link2" name="link2">
+            <label for="link3">Enlace 3:</label>
+            <input type="text" id="link3" name="link3">
+            <label for="link4">Enlace 4:</label>
+            <input type="text" id="link4" name="link4">
+            <label for="link5">Enlace 5:</label>
+            <input type="text" id="link5" name="link5">
+            <button type="button" onclick="submitLinks()">Generar JSON</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
