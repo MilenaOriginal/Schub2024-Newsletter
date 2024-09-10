@@ -5,7 +5,7 @@ import { extract } from 'https://esm.sh/@extractus/article-extractor';
 //var input = "https://www.infobae.com/judiciales/2024/08/26/el-rumor-con-sofia-pacchi-y-el-alerta-del-ama-de-llaves-que-dijo-el-ex-intendente-de-olivos-en-la-causa-contra-alberto-fernandez/" //no funciona
 //fetch('https://www.infobae.com/economia/2024/08/30/el-gobierno-confirmo-los-aumentos-en-tarifas-de-luz-y-gas-que-llegaran-en-septiembre/', { mode: 'no-cors' })
 extraerArticulo();
-const API_KEY = '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';
+const API_KEY = ''; //rellenar
 
 async function extraerArticulo(){
     var input = localStorage.getItem('link');
