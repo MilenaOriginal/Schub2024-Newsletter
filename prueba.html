@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(0.25turn, #B5D99C, #626E61);
+        }
+        .caja{
+            background-color: aqua;
+            height: 300px;
+            width: 100%;
+        }
+        #extraido{
+            height: 500px;
+            overflow-y: scroll;
+            width: 70%;
+           display: none;
+
+        }
+        .titulo{
+            width: 70%;
+            display: flex;
+            justify-content: start;
+        }
+        .titulo h1{
+            color: white;
+            font-family: "Inter", sans-serif;
+            font-weight:850;
+            font-size: 48px;
+            text-shadow: 2px 2px 3px rgba(32, 32, 32, 0.555);
+        }
+        #extraido *{
+            width: 100%;
+        }
+
+        #muestra, #muestraExtraido{
+            height: 500px;
+            overflow-y: scroll;
+            width: 70%;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        #muestraExtraido{
+            margin-top: 30px;
+        }
+        #muestraExtraido *{
+            margin-left: 10px;
+        }
+        #muestra *{
+            margin: auto auto;
+            margin-top: 20px;
+        }
+        #muestraImagen{
+            height: 500px;
+            display: flex;
+            overflow-x: scroll;
+            width: 70%;
+            background-color: white;
+        }
+        #muestraImagen *{
+            width: 100%;
+            padding-top: 20px;
+        }
+        br, p br{
+            display: none !important;
+        }
+        #muestra *{
+            width: 96%;
+        }
+        #muestra p, #muestraExtraido p{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        #generarImg{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 70%;
+        }
+        button{
+            background-color: green;
+            color: white;
+            border: none;
+            height: 40px;
+            cursor: pointer;
+        }
+        textarea{
+            height: 70px;
+            width: 400px;
+        }
+        #seleccionarParrafo{
+            display: flex;
+            width: 70%;
+            justify-content: start;
+
+        }
+        input[type="number"]{
+            width: 40%;
+            height: 38px;
+            background-color: rgba(217, 217, 217, 1);
+            border: none;
+            font-family: "Inter", sans-serif;
+            font-weight: bold;
+            padding-left: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        #seleccionarParrafo button, #seleccionado button, #resultado button{
+            width: 200px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            background-color:rgba(98, 110, 97, 1) ;
+            font-family: "Inter", sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .btn2{
+            width: 300px !important;
+            background-color: #B5D99C !important;
+            height: 42px !important;
+            color:black !important;
+        }
+        #seleccionarParrafo button:hover, #seleccionado button:hover{
+            background-color:rgb(255, 255, 255) ;
+            color: rgba(98, 110, 97, 1);
+            border: 2px solid rgba(98, 110, 97, 1);
+        }
+        @media (max-width: 800px){
+            #seleccionarParrafo input{
+                width: 90%;
+            }
+        }
+    </style>
+    <script type="module" src="/script.js"></script>
+</head>
+
+<body>
+    <div class="titulo"><h1>INSPECCION DE URL</h1></div>
+    
+    <section id="extraido">
+
+    </section>
+    <section id="muestra">
+
+        
+    </section>
+    <div id="muestraImagen">
+
+    </div>
+    <section id="seleccionarParrafo">
+        <input type="number" placeholder="INGRESE EL NUMERO DE PARRAFO">
+        <button>SELECCIONAR PARRAFO</button>
+    </section>
+
+    <section id="muestraExtraido">
+        <div id="seleccionado">
+            <h2>PARRAFO SELECCIONADO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nostrum natus dicta dolore libero hic voluptate incidunt qui soluta sit beatae, nulla at excepturi pariatur ipsum iste! Voluptatum, iste voluptatem!</p>
+            <button>MODIFICAR CON IA</button><button class="btn2">GENERAR IMAGEN RELACIONADA</button>
+        </div>
+        <div id="resultado">
+            <H2>RESULTADO</H2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto nihil similique repellendus voluptas blanditiis odio consequatur? Iste amet commodi laboriosam dolores mollitia quam alias nobis aspernatur accusamus eius. Enim, molestias.</p>
+            <button>GUARDAR TEXTO</button>
+        </div>
+    </section>
+
+    <section id="generarImg">
+        <h2>Generar Imagen</h2>
+        <textarea id="imageDescription" placeholder="Introduce la descripción de la imagen..."></textarea><br>
+        <button onclick="generateImage()">Generar Imagen</button><br>
+        <img id="generatedImage" alt="Imagen generada aparecerá aquí" />
+    </section>
+   
+  <script src="/imagen.js"></script>
+</body>
+
+</html>
